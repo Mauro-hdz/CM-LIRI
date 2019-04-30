@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/CaptainHdz/CM-LIRI/issues"
   },
-  "homepage": "https://github.com/CaptainHdz/CM-LIRI#readme"
+  "homepage": "https://github.com/CaptainHdz/CM-LIRI#readme",
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "dotenv": "^7.0.0"
+  }
 }
