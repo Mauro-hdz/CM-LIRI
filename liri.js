@@ -19,15 +19,24 @@ const topic = process.argv[3];
 //Tells the computer where to search based on what users is looking for
 switch (search) {
     case "search-concerts":
-// Search the ticketmaster api
+// Search the ticketmaster api with the topic variable and console.log the info
+
+console.log("searching");
+searchTicketmaster();
 
     break;
     case "search-songs":
-// Search the spotify api
+// Search the spotify api with the topic variable and console.log the info
+
+console.log("searching")
+searchSong();
 
     break;
     case "search-movie":
-// Search the OMDB api
+// Search the OMDB api with the topic variable and console.log th info
+
+console.log("searching");
+searchMovies();
 
     break;
     case "feeling-lucky":
@@ -35,3 +44,8 @@ switch (search) {
 
     break;
 };
+
+function searchSong(topic) {
+   
+}
+
