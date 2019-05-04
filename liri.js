@@ -1,5 +1,7 @@
 require("dotenv").config();
 
+const axios = require("axios");
+
 const keys = require("./keys.js");
 
 const spotify = new Spotify(keys.spotify);
@@ -46,6 +48,22 @@ searchMovies();
 };
 
 function searchSong(topic) {
+    var spotify = new Spotify({
+        id: keys.SPOTIFY_ID,
+        secret: keys.SPOTIFY_SECRET,
+      });
+       
+      spotify.search({ type: 'track', query: topic }, function(err, data) {
+        if (err) {
+          return console.log('Error occurred: ' + err);
+        }
+       
+      console.log(data); 
+      });
    
-}
+};
+
+function searchTicketmaster(topic) {};
+
+function searchMovies(topic) {};
 
