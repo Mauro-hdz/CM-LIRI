@@ -24,24 +24,27 @@ switch (search) {
     case "search-concerts":
 // Search the ticketmaster api with the topic variable and console.log the info
 
-console.log("searching");
-searchTicketmaster();
+        console.log("searching");
+        searchTicketmaster();
 
     break;
+
     case "search-songs":
 // Search the spotify api with the topic variable and console.log the info
 
-console.log("searching")
-searchSong();
+        console.log("searching")
+        searchSong();
 
     break;
+
     case "search-movie":
 // Search the OMDB api with the topic variable and console.log th info
 
-console.log("searching");
-searchMovies();
+        console.log("searching");
+        searchMovies();
 
     break;
+    
     case "feeling-lucky":
 // Not sure yet
 
